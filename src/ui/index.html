@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html ng-app="MyApp">
+	<head>
+		<base target="_top">
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.min.js"></script>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+		<?!= include('style.css'); ?>
+	</head>
+
+	<body ng-controller="SharedController as ctrl">
+		<div class="container">
+			<h1>Hello World</h1>
+			<br><br><br><br>
+			<pre class="pre-scrollable">{{ctrl | json}}</pre>
+			<br><br><br><br>
+		</div>
+	</body>
+
+	<script>
+		<?!= include('shared.controller.client.js'); ?>
+	</script>
+</html>
