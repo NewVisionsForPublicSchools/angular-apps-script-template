@@ -10,6 +10,12 @@
 	<body ng-controller="SharedController as ctrl">
 		<div class="container">
 			<h1>Hello World</h1>
+			<br><br>
+			<div class="load-bar col-md-12" ng-show="ctrl.isLoading">
+		      <div class="bar"></div>
+		      <div class="bar"></div>
+		      <div class="bar"></div>
+		    </div>
 			<br><br><br><br>
 			<pre class="pre-scrollable">{{ctrl | json}}</pre>
 			<br><br><br><br>
