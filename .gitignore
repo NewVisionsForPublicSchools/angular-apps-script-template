@@ -1,2 +1,4 @@
 src/server/Setup.js
 /build/*/gapps.config.json
+package-lock.json
+node_modules/
